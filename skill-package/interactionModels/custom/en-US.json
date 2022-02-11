@@ -1,0 +1,103 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "food store assistant",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "FoodInfoIntent",
+          "slots": [],
+          "samples": [
+            "show me your inventory",
+            "show me the food you offer",
+            "can you tell me about the food you offer",
+            "what food do you offer"
+          ]
+        },
+        {
+          "name": "FOODREQUESTINTENT",
+          "slots": [
+            {
+              "name": "foodtype",
+              "type": "FOODTYPE",
+              "multipleValues": {
+                "enabled": false
+              }
+            }
+          ],
+          "samples": [
+            "can i buy {foodtype} from you",
+            "do you offert {foodtype}",
+            "do you have {foodtype}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "onions"
+              }
+            },
+            {
+              "name": {
+                "value": "pizza"
+              }
+            },
+            {
+              "name": {
+                "value": "pasta"
+              }
+            },
+            {
+              "name": {
+                "value": "oranges"
+              }
+            },
+            {
+              "name": {
+                "value": "bananas"
+              }
+            },
+            {
+              "name": {
+                "value": "apples"
+              }
+            }
+          ],
+          "name": "FOODTYPE"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}
